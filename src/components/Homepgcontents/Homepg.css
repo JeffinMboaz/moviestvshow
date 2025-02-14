@@ -1,0 +1,72 @@
+.movieposters {
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Scrollable container */
+  .scroll-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+  }
+  
+  /* Custom scrollbar for Chrome, Edge, and Safari */
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Movie poster wrapper */
+  .poster {
+    flex: 0 0 auto;
+    width: 200px;
+  }
+  
+  /* Responsive image */
+  .img-fluid {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-fluid:hover {
+    transform: scale(1.05);
+  }
+  
+  /* RESPONSIVE DESIGN */
+  
+  /* For small devices (phones) */
+  @media (max-width: 576px) {
+    .poster {
+      width: 150px;
+    }
+  }
+  
+  /* For tablets */
+  @media (max-width: 768px) {
+    .poster {
+      width: 180px;
+    }
+  }
+  
+  /* For larger screens */
+  @media (min-width: 992px) {
+    .poster {
+      width: 220px;
+    }
+  }
+  

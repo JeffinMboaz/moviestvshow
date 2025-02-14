@@ -1,0 +1,36 @@
+html,body{
+    background-color: #121746;
+    color: white;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.NavList{
+    height:95px;
+    background-color: #121746;    
+}
+.navmovie{
+    color: white;
+}
+.hmContents{
+    background-color: #0e0e1bf6;
+    color: white;
+}
+
+.foot{
+    margin:0;
+    height: 150px;
+    text-align: center;
+    background-color: rgb(17, 15, 15);
+    color: white;
+    
+}
+  
+.wallpaper{
+   
+    overflow: hidden;
+    object-fit:cover;
+    width: 100%;  
+    height: auto; 
+    max-width: 100%; 
+    display: block;
+}
