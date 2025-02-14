@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {  HashRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Homepage from './components/Homepage';
 import PopularMovies from './components/movies/PopularMovies';
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
 
-      <BrowserRouter basename='/moviestvshow'>
+      < HashRouter basename='/moviestvshow'>
         <div>
           <Header />
           <Homepage />
@@ -34,7 +34,7 @@ function App() {
         <div>
           <Footer />
         </div>
-      </BrowserRouter>
+      </ HashRouter>
 
     </>
   )
