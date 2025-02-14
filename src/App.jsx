@@ -23,11 +23,11 @@ function App() {
         <div>
           <Routes>
             <Route exact path='/moviestvshow' element={<Homepage />}></Route>
-            <Route path='/popularMovies' element={<PopularMovies />}></Route>
-            <Route path='/tvshows' element={<Tvshows />}></Route>
-            <Route path='/upcomingmovies' element={<Upcomingmovies />}></Route>
-            <Route path='/topratedmovies' element={<Toprated />}></Route>
-            <Route path='/topratedshows' element={<Topratedtv />}></Route>
+            <Route path='popularMovies' element={<PopularMovies />}></Route>
+            <Route path='tvshows' element={<Tvshows />}></Route>
+            <Route path='upcomingmovies' element={<Upcomingmovies />}></Route>
+            <Route path='topratedmovies' element={<Toprated />}></Route>
+            <Route path='topratedshows' element={<Topratedtv />}></Route>
 
           </Routes>
         </div>

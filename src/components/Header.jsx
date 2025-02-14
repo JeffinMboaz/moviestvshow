@@ -8,7 +8,7 @@ function Header() {
   return (
     <Navbar expand="lg" bg="dark" variant="dark" fixed="top" className="shadow-sm py-4 ">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/" className="fw-bolder  ms-3 text-uppercase">
+        <Navbar.Brand as={Link} to="/moviestvshow" className="fw-bolder  ms-3 text-uppercase">
           imax
         </Navbar.Brand>
 
@@ -16,7 +16,7 @@ function Header() {
 
         <Navbar.Collapse id="navbarScroll" >
           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link as={Link} to="/" className="text-white">
+            <Nav.Link as={Link} to="/moviestvshow" className="text-white">
               Home
             </Nav.Link>
 
@@ -25,13 +25,13 @@ function Header() {
                 Movies
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/popularMovies">
+                <Dropdown.Item as={Link} to="/moviestvshow/popularMovies">
                   Popular Movies
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/upcomingmovies">
+                <Dropdown.Item as={Link} to="/moviestvshow/upcomingmovies">
                   Upcoming Movies
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/topratedmovies">
+                <Dropdown.Item as={Link} to="/moviestvshow/topratedmovies">
                   Top-rated Movies
                 </Dropdown.Item>
               </Dropdown.Menu>
@@ -42,17 +42,17 @@ function Header() {
                 TV Shows
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/tvshows">
+                <Dropdown.Item as={Link} to="/moviestvshow/tvshows">
                   Popular Shows
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/topratedshows">
+                <Dropdown.Item as={Link} to="/moviestvshow/topratedshows">
                   Top-rated Shows
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>
 
-          {/* Search Bar */}
+          
           <Form className="d-flex  container-fluid "  >
             <Form.Control
               type="search"
