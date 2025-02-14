@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom"; 
-import { 
-  Navbar, Nav, Container, Form, Button, Dropdown, NavItem, NavLink 
+import { Link } from "react-router-dom";
+import {
+  Navbar, Nav, Container, Form, Button, Dropdown, NavItem, NavLink
 } from "react-bootstrap";
 
 function Header() {
@@ -16,6 +16,11 @@ function Header() {
 
         <Navbar.Collapse id="navbarScroll" >
           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+
+            <Navbar.Brand as={Link} to="/moviestvshow" className="fw-bolder ms-3 text-uppercase">
+              imax
+            </Navbar.Brand>
+
             <Nav.Link as={Link} to="/moviestvshow" className="text-white">
               Home
             </Nav.Link>
@@ -50,9 +55,10 @@ function Header() {
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
+
           </Nav>
 
-          
+
           <Form className="d-flex  container-fluid "  >
             <Form.Control
               type="search"

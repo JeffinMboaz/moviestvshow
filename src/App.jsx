@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {  HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Homepage from './components/Homepage';
 import PopularMovies from './components/movies/PopularMovies';
@@ -13,28 +13,27 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
+<BrowserRouter basename="/moviestvshow">
+  <div>
+    <Header />
+    <Homepage />
+  </div>
 
-      < HashRouter basename='/moviestvshow'>
-        <div>
-          <Header />
-          <Homepage />
-        </div>
+  <div>
+    <Routes>
+      <Route exact path="/moviestvshow" element={<Homepage />} />
+      <Route path="/moviestvshow/popularMovies" element={<PopularMovies />} />
+      <Route path="/moviestvshow/tvshows" element={<Tvshows />} />
+      <Route path="/moviestvshow/upcomingmovies" element={<Upcomingmovies />} />
+      <Route path="/moviestvshow/topratedmovies" element={<Toprated />} />
+      <Route path="/moviestvshow/topratedshows" element={<Topratedtv />} />
+    </Routes>
+  </div>
 
-        <div>
-          <Routes>
-            <Route exact path='/moviestvshow' element={<Homepage />}></Route>
-            <Route path='popularMovies' element={<PopularMovies />}></Route>
-            <Route path='tvshows' element={<Tvshows />}></Route>
-            <Route path='upcomingmovies' element={<Upcomingmovies />}></Route>
-            <Route path='topratedmovies' element={<Toprated />}></Route>
-            <Route path='topratedshows' element={<Topratedtv />}></Route>
-
-          </Routes>
-        </div>
-        <div>
-          <Footer />
-        </div>
-      </ HashRouter>
+  <div>
+    <Footer />
+  </div>
+</BrowserRouter>
 
     </>
   )
